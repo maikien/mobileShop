@@ -1,0 +1,208 @@
+<!doctype html>
+<html class="no-js" lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <title>MobileStore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carouse.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="font/flaticon.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light" id="main-navbar">
+            <div class="container nav-container">
+                <a title="logo" class="logo" href="index.html"><span style="color: red;">Mobile</span> Store</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- main-nav -->
+                <div class=" main-nav navbar-collapse collapse" id="collapsibleNavbar">
+                    <!-- search-box -->
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Bạn tìm gì.." />
+                            <button class="search-icon" onclick="searchToggle(this, event);"><i class="flaticon-search"></i>
+            </button>
+                        </div>
+                        <span class="close" onclick="searchToggle(this, event);">
+        </span>
+                    </div>
+                    <!-- account-info -->
+                    <div class="account-info navbar-nav">
+
+                        <div class="dropdown user-account">
+                            <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Tài khoản    
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="profile.html">Thông tin cá nhân</a>
+                                <a class="dropdown-item" href="ads.html">Đăng ký quảng bá sản phẩm</a>
+                                <a class="dropdown-item" href="cart.html">Sản phẩm đã lưu</a>
+                                <a class="dropdown-item log_out" href="#">Đăng xuất</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="carouse2  row" style="background-image: url( 'hero/about_hero.png') ">
+        <div class="col-xl-12">
+            <div class="hero-cap text-center">
+                <h2>Đăng ký quảng bá kinh doanh</h2>
+            </div>
+        </div>
+    </section>
+    <main>
+
+        <!--================login_part Area =================-->
+        <section class="login_part section_padding ">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="login_part_text text-center">
+                            <div class="login_part_text_iner">
+                                <h2>Đăng ký quảng bá sản phẩm</h2>
+                                <p>Giúp thương hiệu của bạn tiếp cận với nhiều người dùng hơn.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="login_part_form">
+                            <div class="login_part_form_iner">
+                                <h3>Đăng ký ngay!</h3>
+                                <form class="row contact_form" action="#" method="post" novalidate="novalidate">
+                                    <div class="col-md-12 form-group p_star">
+                                        <input type="text" class="form-control" id="enterprise" name="enterprise" value="" placeholder="Tên doanh nghiệp" required>
+                                    </div>
+
+                                    <div class="col-md-12 form-group p_star">
+                                        <input type="text" class="form-control" id="en_product" name="en_product" value="" placeholder="Tên sản phẩm quảng bá" required>
+                                    </div>
+
+                                    <div class="col-md-12 form-group p_star">
+                                        <input type="text" class="form-control" id="product_link" name="product_link" value="" placeholder="Linnk sản phẩm quảng bá" required>
+                                    </div>
+
+                                    <div class="col-md-12 form-group p_star">
+                                        <input type="text" class="form-control" id="ads-time" name="ads-time" value="" placeholder="Thời gian quảng bá" required>
+                                    </div>
+                                    <div class="col-md-12 form-group p_star">
+                                        <input type="text" class="form-control" id="phone" name="phone" value="" placeholder="Số điện thoại" required>
+                                    </div>
+
+
+                                    <div class="col-md-12 form-group">
+                                        <button type="submit" value="submit" class="btn_3">
+                                        đăng ký
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================login_part end =================-->
+    </main>
+
+
+    <!-- ==========================FOOTER START========================== -->
+    <footer>
+        <!-- Footer Start-->
+        <div class="footer-area footer-padding ">
+            <div class="container-fl ">
+                <div class="row d-flex justify-content-between ">
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 ">
+                        <div class="single-footer-caption mb-50 ">
+                            <div class="single-footer-caption mb-30 ">
+                                <div class="footer-logo ">
+                                    <a href="index.html " class="logo ">MobileStore</a>
+                                </div>
+                                <div class="footer-tittle ">
+                                    <div class="footer-pera ">
+                                        <p>Công nghệ như một hình thức nghệ thuật.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5 ">
+                        <div class="single-footer-caption mb-50 ">
+                            <div class="footer-tittle ">
+                                <h4>Dịch vụ - Hỗ trợ</h4>
+                                <ul>
+                                    <li><a href="# ">Liên hệ hợp tác kinh doanh</a></li>
+
+                                    <li><a href="# ">Đăng ký quảng bá sản phẩm</a></li>
+                                    <li>
+                                        <a href="# ">Câu hỏi thường gặp</a>
+                                    </li>
+                                    <li><a href="# ">Điều khoản mua bán hàng hóa</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7 ">
+                        <div class="single-footer-caption mb-50 ">
+                            <div class="footer-tittle ">
+                                <h4>Điện thoại nổi bật</h4>
+                                <ul>
+                                    <li><a href="# ">Samsung Galaxy Z Fold2 5G
+                                    </a></li>
+                                    <li><a href="# ">iPhone 12 Pro Max 512GB
+                                    </a></li>
+                                    <li><a href="# ">iPhone 12 Pro Max 128GB</a></li>
+                                    <li><a href="# ">Samsung Galaxy S21+ 5G 128GB</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-5 ">
+                        <div class="single-footer-caption mb-50 ">
+                            <div class="footer-tittle ">
+                                <h4>Thông tin liên hệ</h4>
+                                <ul>
+                                    <li><a href="# ">Chăm sóc khách hàng</a></li>
+                                    <li><a href="# ">Hỗ trợ kỹ thuật</a></li>
+                                    <li><a href="# ">Hỗ trợ Bảo hành</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer bottom -->
+        <div class="row align-items-center justify-content-center footer_bottom ">
+            <div class="col-xl-7 col-lg-8 col-md-7 pl-4 ">
+                <div class="footer-copy-right ">
+                    <p>
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | This template is made with <i class="fa fa-heart " aria-hidden="true "></i> by <a href="https://colorlib.com " target="_blank ">Colorlib</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+</body>
+
+</html>
